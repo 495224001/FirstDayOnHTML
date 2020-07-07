@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  </head>
+  <body>
+    <h3>Contact me</h3>
+    <ul>
+      <li>CellPhone</li>
+      <ul>
+        <li>1234567890</li>
+        <li>9876543210</li>
+      </ul>
+      <li>Home Phone</li>
+      <ul>
+        <li>1029384756</li>
+      </ul>
+      <li>Emails</li>
+      <ul>
+        <li>makeitup@whatever.com</li>
+        <li>givesomemore@whocares.com</li>
+      </ul>
+    </ul>
+<!-- Form is like a box that can create Label and TextField(text) botton(submit andd delete value) as GUI
+      can find more action like color/checkbox etc. on MDN Input Form
+        action means setOnAction in GUI, if it is index.html, no matter what u do, when you click submit button, it go back to index.html
+          plaintext means no more special character in UTF-8, pure text instead-->
+      <table>
+        <form action="mailto:WhateverEnailYouEnter@nobodycares.com" method="post" enctype="text/plain">
+        <tr>
+          <td><label for="">Your Name:</label></td>
+          <!-- name is a kind a child class name, like a helper class-->
+        <td> <input type="text" name="yourName" value=""></td>
+        </tr>
+        <tr>
+          <td><label for="">Email:</label></td>
+            <td><input type="email" name="yourEmail" value=""></td>
+      </table>
+      <label for="">Message:</label><br>
+      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+      <label for="">Do you Want to submit?</label>
+      <input type="submit" name="">
+    </form>
+  </body>
+</html>
